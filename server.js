@@ -1,8 +1,10 @@
 const express=require('express')
 const mongoose=require('mongoose')
 require('dotenv').config()
-const User=require('./models/User')
+const User=require('./models/user')
 const bcrypt=require('bcryptjs')
+const Recipe=require('./models/Recipe')
+
 const app=express()
 app.use(express.json());
 const PORT=3000
